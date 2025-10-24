@@ -8,20 +8,19 @@ services:
     volumes:
       - uploads:/var/www/html/wp-content/uploads
     environment:
-      # CiviCRM db info
+      # db info
       # CIVICRM_DSN: mysql://civicrm:${MYSQL_PASSWORD}@db:3306/civicrm # Note: you can also pass database credentials as a DSN.
       CIVICRM_DB_HOST: db
       CIVICRM_DB_PORT: 3306
       CIVICRM_DB_NAME: civicrm
       CIVICRM_DB_USER: civicrm
       CIVICRM_DB_PASSWORD: ${MYSQL_PASSWORD}
+      # CiviCRM info
       CIVICRM_UF_BASEURL: http://localhost:8760
-      # CiviCRM db info
-      WORDPRESS_DB_HOST: db 
-      WORDPRESS_DB_PORT: 3306
+      # WordPress info
       WORDPRESS_DB_NAME: wordpress
-      WORDPRESS_DB_USER: civicrm 
-      WORDPRESS_DB_PASSWORD: ${MYSQL_PASSWORD}
+      WORDPRESS_SITE_TITLE: example-site
+      CIVICRM_ADMIN_EMAIL: admin@example.com
   db:
     hostname: db
     image: mariadb:10.11
