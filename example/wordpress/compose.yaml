@@ -18,7 +18,6 @@ services:
       # CiviCRM info
       CIVICRM_UF_BASEURL: http://localhost:8760
       # WordPress info
-      WORDPRESS_DB_NAME: wordpress
       WORDPRESS_SITE_TITLE: example-site
       CIVICRM_ADMIN_EMAIL: admin@example.com
   db:
