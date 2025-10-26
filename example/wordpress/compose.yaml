@@ -20,7 +20,7 @@ services:
       CIVICRM_UF_BASEURL: http://localhost:8760
       # WordPress info
       WORDPRESS_DB_HOST: db 
-      WORDPRESS_DB_NAME: wordpress 
+      WORDPRESS_DB_NAME: civicrm 
       WORDPRESS_DB_USER: civicrm 
       WORDPRESS_DB_PASSWORD: ${MYSQL_PASSWORD}
       WORDPRESS_SITE_TITLE: example-site
